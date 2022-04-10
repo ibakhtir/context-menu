@@ -17,7 +17,7 @@ body {
 .menu {
   position: fixed;
   z-index: 1000;
-  width: 150px;
+  width: auto;
   background: #1b1a1a;
   border-radius: 5px;
   display: none;
@@ -39,4 +39,74 @@ body {
 
 .menu .menu-item:hover {
   background: #343434;
+}
+
+/* timer-module */
+
+.timer {
+  width: 220px;
+  height: 200px;
+
+  background-color: #1f2937;
+  color: #f3f4f6;
+  border-radius: 16px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.timer__part {
+  font-size: 58px;
+  font-weight: normal;
+  margin-bottom: 10px;
+  cursor: default;
+}
+
+.timer__input_text {
+  width: 180px;
+  padding: 5px;
+  border-radius: 8px;
+  text-align: center;
+  border: 3px solid #1f2937;
+  outline: none;
+}
+
+input::-webkit-input-placeholder {
+  color: #999;
+}
+
+input:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+
+.timer__btn {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.timer__btn button {
+  appearance: none;
+  background: none;
+  border: none;
+  outline: none;
+  user-select: none;
+
+  cursor: pointer;
+  background-color: crimson;
+  color: #f3f4f6;
+  height: 50px;
+  width: 50px;
+  margin: 5px;
+  border-radius: 8px;
+}
+
+button:hover {
+  opacity: 0.7;
+}
+
+.material-icons {
+  margin: auto;
 }

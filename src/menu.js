@@ -1,9 +1,11 @@
 import { Menu } from "./core/menu";
 import { BackgroundModule } from "./modules/background-module";
+import { TimerModule } from "./modules/timer-module";
 
 const backgroundModule = new BackgroundModule("background", "Случайный фон");
+const timerModule = new TimerModule("timer", "Запустить таймер");
 
-const modules = [backgroundModule];
+const modules = [backgroundModule, timerModule];
 
 export class ContextMenu extends Menu {
   constructor(selector) {
